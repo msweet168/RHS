@@ -178,10 +178,6 @@ class menuController: UIViewController {
         
     }
     
-    func imARandomFunc() {
-        print("Hello World!")
-    }
-    
     func clockupdater() {
         clocktimer = NSTimer.scheduledTimerWithTimeInterval(5, target: self, selector: #selector(menuController.setupclock), userInfo: nil, repeats: true)
     }
