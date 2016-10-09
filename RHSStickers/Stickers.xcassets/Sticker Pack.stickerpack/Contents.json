@@ -1,0 +1,32 @@
+{
+  "stickers" : [
+    {
+      "filename" : "RHSbulldog.sticker"
+    },
+    {
+      "filename" : "Seniors Sticker.sticker"
+    },
+    {
+      "filename" : "Juniors Sticker.sticker"
+    },
+    {
+      "filename" : "SophSticker.sticker"
+    },
+    {
+      "filename" : "FreshSticker.sticker"
+    },
+    {
+      "filename" : "Roslyn Pride Sticker.sticker"
+    },
+    {
+      "filename" : "Rowl Sticker.sticker"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  },
+  "properties" : {
+    "grid-size" : "regular"
+  }
+}
