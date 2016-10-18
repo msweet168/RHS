@@ -485,8 +485,8 @@ class menuController: UIViewController {
     func splashScreen () {
         let magicNumber = NSUserDefaults .standardUserDefaults() .integerForKey("splash")
         
-        if magicNumber != 30 {
-            NSUserDefaults .standardUserDefaults() .setInteger(30, forKey: "splash")
+        if magicNumber != 304 {
+            NSUserDefaults .standardUserDefaults() .setInteger(304, forKey: "splash")
             
             let splashAlert = SCLAlertView()
             splashAlert.showCloseButton = false

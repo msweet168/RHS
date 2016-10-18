@@ -907,7 +907,7 @@
                                                     <constraint firstAttribute="height" constant="39" id="rie-e6-Rfh"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                                <state key="normal" title="Prefrences">
+                                                <state key="normal" title="Preferences">
                                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
@@ -1220,8 +1220,8 @@ If you are not, tap anywhere else on the screen, if you are, please tap ‚ÄùYes‚Ä
                                         <exclude reference="QcK-oh-rIb"/>
                                     </mask>
                                     <mask key="constraints">
-                                        <exclude reference="H1J-MO-NEV"/>
                                         <exclude reference="3ke-Zf-5b4"/>
+                                        <exclude reference="H1J-MO-NEV"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=regular">
@@ -1229,8 +1229,8 @@ If you are not, tap anywhere else on the screen, if you are, please tap ‚ÄùYes‚Ä
                                         <include reference="QcK-oh-rIb"/>
                                     </mask>
                                     <mask key="constraints">
-                                        <include reference="H1J-MO-NEV"/>
                                         <include reference="3ke-Zf-5b4"/>
+                                        <include reference="H1J-MO-NEV"/>
                                     </mask>
                                 </variation>
                             </view>
@@ -1614,6 +1614,37 @@ If you are not, tap anywhere else on the screen, if you are, please tap ‚ÄùYes‚Ä
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hBo-Uh-IG3">
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="226" id="INh-dX-oIO"/>
+                                    <constraint firstAttribute="height" constant="34" id="L0B-Ad-TII"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="19"/>
+                                <state key="normal" title="Back to RHS Mobile">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttontapped:" destination="cJN-TY-y1r" eventType="touchUpInside" id="MOm-H4-r85"/>
+                                    <segue destination="3ph-y0-Xiy" kind="show" id="0ak-LP-qk1"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="studenlifedark.png" translatesAutoresizingMaskIntoConstraints="NO" id="T4K-MI-Uoh">
+                                <frame key="frameInset" minX="39" minY="132" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="iPhone.png" translatesAutoresizingMaskIntoConstraints="NO" id="pHu-0c-Bbb">
+                                <frame key="frameInset" minX="39" minY="464" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Finger.png" translatesAutoresizingMaskIntoConstraints="NO" id="sfj-Xm-SVu">
+                                <frame key="frameInset" minX="39" minY="240" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tap.png" translatesAutoresizingMaskIntoConstraints="NO" id="it4-vy-Ony">
+                                <frame key="frameInset" minX="39" minY="352" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RHS Mobile 3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2BF-FI-Cgx">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="54" id="CUs-c5-ZL6"/>
@@ -1662,29 +1693,6 @@ If you are not, tap anywhere else on the screen, if you are, please tap ‚ÄùYes‚Ä
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hBo-Uh-IG3">
-                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="226" id="INh-dX-oIO"/>
-                                    <constraint firstAttribute="height" constant="34" id="L0B-Ad-TII"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="19"/>
-                                <state key="normal" title="Back to RHS Mobile">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="buttontapped:" destination="cJN-TY-y1r" eventType="touchUpInside" id="MOm-H4-r85"/>
-                                    <segue destination="3ph-y0-Xiy" kind="show" id="0ak-LP-qk1"/>
-                                </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="studenlifedark.png" translatesAutoresizingMaskIntoConstraints="NO" id="T4K-MI-Uoh">
-                                <frame key="frameInset" minX="39" minY="132" width="64" height="64"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="iPhone.png" translatesAutoresizingMaskIntoConstraints="NO" id="pHu-0c-Bbb">
-                                <frame key="frameInset" minX="39" minY="464" width="64" height="64"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xhy-8x-tgV">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="248" id="DGl-RC-dlR"/>
@@ -1695,14 +1703,6 @@ If you are not, tap anywhere else on the screen, if you are, please tap ‚ÄùYes‚Ä
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Finger.png" translatesAutoresizingMaskIntoConstraints="NO" id="sfj-Xm-SVu">
-                                <frame key="frameInset" minX="39" minY="240" width="64" height="64"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tap.png" translatesAutoresizingMaskIntoConstraints="NO" id="it4-vy-Ony">
-                                <frame key="frameInset" minX="39" minY="352" width="64" height="64"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -1714,7 +1714,7 @@ If you are not, tap anywhere else on the screen, if you are, please tap ‚ÄùYes‚Ä
                             <constraint firstItem="pKO-FU-Xfb" firstAttribute="trailing" secondItem="tjI-ML-S2M" secondAttribute="trailingMargin" id="A9d-U9-kJq">
                                 <variation key="heightClass=regular-widthClass=regular" constant="-129"/>
                             </constraint>
-                            <constraint firstItem="2BF-FI-Cgx" firstAttribute="top" secondItem="x0u-cD-dEA" secondAttribute="bottom" id="AOZ-25-vay"/>
+                            <constraint firstItem="2BF-FI-Cgx" firstAttribute="top" secondItem="x0u-cD-dEA" secondAttribute="bottom" constant="20" id="AOZ-25-vay"/>
                             <constraint firstItem="hBo-Uh-IG3" firstAttribute="centerX" secondItem="tjI-ML-S2M" secondAttribute="centerX" id="Asx-EM-OVH"/>
                             <constraint firstItem="Xhy-8x-tgV" firstAttribute="trailing" secondItem="tjI-ML-S2M" secondAttribute="trailingMargin" id="G9E-fE-G6B">
                                 <variation key="heightClass=regular-widthClass=regular" constant="-129"/>
@@ -1737,8 +1737,8 @@ If you are not, tap anywhere else on the screen, if you are, please tap ‚ÄùYes‚Ä
                             <mask key="constraints">
                                 <exclude reference="swZ-hp-s3d"/>
                                 <exclude reference="1tJ-Si-aQd"/>
-                                <exclude reference="cJ2-mS-VWG"/>
                                 <exclude reference="mJ7-fu-x3k"/>
+                                <exclude reference="cJ2-mS-VWG"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=regular">
@@ -1753,14 +1753,16 @@ If you are not, tap anywhere else on the screen, if you are, please tap ‚ÄùYes‚Ä
                                 <include reference="swZ-hp-s3d"/>
                                 <include reference="1tJ-Si-aQd"/>
                                 <exclude reference="NZV-Kf-Fkm"/>
-                                <exclude reference="A9d-U9-kJq"/>
-                                <include reference="cJ2-mS-VWG"/>
                                 <exclude reference="G9E-fE-G6B"/>
                                 <include reference="mJ7-fu-x3k"/>
+                                <exclude reference="A9d-U9-kJq"/>
+                                <include reference="cJ2-mS-VWG"/>
                             </mask>
                         </variation>
                     </view>
+                    <nil key="simulatedStatusBarMetrics"/>
                     <connections>
+                        <outlet property="lastText" destination="Xhy-8x-tgV" id="hlb-hx-YVW"/>
                         <outletCollection property="Images" destination="T4K-MI-Uoh" collectionClass="NSMutableArray" id="KKX-AH-pQU"/>
                         <outletCollection property="Images" destination="sfj-Xm-SVu" collectionClass="NSMutableArray" id="wqB-yR-fdd"/>
                         <outletCollection property="Images" destination="it4-vy-Ony" collectionClass="NSMutableArray" id="0TM-E8-xKm"/>
@@ -2527,13 +2529,13 @@ If you are not, tap anywhere else on the screen, if you are, please tap ‚ÄùYes‚Ä
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="94V-LA-olT">
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="163" id="Nvv-PK-Nl7">
+                                            <constraint firstAttribute="width" constant="174" id="Nvv-PK-Nl7">
                                                 <variation key="heightClass=regular-widthClass=regular" constant="202"/>
                                             </constraint>
                                             <constraint firstAttribute="height" constant="50" id="sIf-7r-dKl"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                        <state key="normal" title="‚¨ÖÔ∏é Prefrences">
+                                        <state key="normal" title="‚¨ÖÔ∏é Preferences">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <variation key="heightClass=regular-widthClass=regular">
@@ -2848,7 +2850,7 @@ If you are not, tap anywhere else on the screen, if you are, please tap ‚ÄùYes‚Ä
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PdY-AM-Gjf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1933.59375" y="347.4609375"/>
+            <point key="canvasLocation" x="1932" y="346.77661169415296"/>
         </scene>
         <!--Sixflags View Controller-->
         <scene sceneID="HJm-V6-RsU">
@@ -4905,8 +4907,8 @@ If you are not, tap anywhere else on the screen, if you are, please tap ‚ÄùYes‚Ä
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="k3Q-1v-wli"/>
-        <segue reference="Bek-nr-r3a"/>
-        <segue reference="F59-Ez-HuH"/>
+        <segue reference="3vm-bh-nm8"/>
+        <segue reference="0ak-LP-qk1"/>
         <segue reference="FyX-eQ-ofN"/>
         <segue reference="vgD-L1-WPP"/>
         <segue reference="7B6-gA-BWi"/>

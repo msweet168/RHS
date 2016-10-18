@@ -13,13 +13,15 @@ class SplashScreen: UIViewController {
     
     
     @IBOutlet var Images: [UIImageView]!
-
+    @IBOutlet var lastText: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         if UIScreen.mainScreen().bounds.size.height == 568 {
             for view in self.Images {
                 view.hidden = true
+                lastText.hidden = true
             }
         }
 
