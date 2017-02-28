@@ -435,7 +435,7 @@ class HWViewController: UIViewController, UITableViewDelegate, UITableViewDataSo
                                                                  fromDate: NSDate(),
                                                                  toDate: next8AM,
                                                                  options: .MatchNextTime)
-        countdownlabel.text = "\(components.hour):\(components.minute) unitl school."
+        countdownlabel.text = "\(components.hour):\(components.minute) until school."
     }
     
     
