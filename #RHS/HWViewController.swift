@@ -201,6 +201,8 @@ class HWViewController: UIViewController, UITableViewDelegate, UITableViewDataSo
         
         let infoAlert = SCLAlertView()
         
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        
         //let alert = UIAlertController(title: self.assignment[indexPath.row], message: self.notes[indexPath.row], preferredStyle: UIAlertControllerStyle.Alert)
         
        // alert.addAction(UIAlertAction(title: "Close", style: UIAlertActionStyle.Default, handler: nil))

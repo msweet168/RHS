@@ -54,7 +54,7 @@ class TutorialViewController: UIViewController {
             progressint = 5
             progressbar.setProgress(0.7, animated: true)
             toplabel.text = "3D Touch"
-            infolabel.text = "On your home screen, tap firmly on the app icon to quiclky add a homework or see the bell schedule. On the RHS menu, tap firmly on homework, bell schedule, or reminders to see a preview without entering the page. (iPhone 6S/7 only)"
+            infolabel.text = "On your home screen, tap firmly on the app icon to quickly add a homework or see the bell schedule. On the RHS menu, tap firmly on homework, bell schedule, or reminders to see a preview without entering the page. (iPhone 6S/7 only)"
         case 5:
             progressint = 6
             toplabel.text = "Homework"
@@ -79,7 +79,7 @@ class TutorialViewController: UIViewController {
         default:
             print("Error")
             toplabel.text = "Error"
-            infolabel.text = "Please quit and reload this app. We are sorry for the inconvience. Go to Sweetdevelop.com/bugreport to report a problem."
+            infolabel.text = "Please quit and reload this app. We are sorry for the inconvience. Go to Sweetdevelop.com/system-status to report a problem."
         }
         
     }

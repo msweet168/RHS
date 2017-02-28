@@ -29,8 +29,10 @@ class settingsViewController: UIViewController {
 
     @IBAction func activatebell(sender: UITextField) {
         if sender.text == "bellme" {
-            sender.text = "You have been belled."
+            //sender.text = "You have been belled."
             NSUserDefaults .standardUserDefaults().setInteger(11, forKey: "bellapp")
+            let theAlert = SCLAlertView()
+            theAlert.showError("We're Sorry", subTitle: "This feature is no longer supported.", closeButtonTitle: "Dismiss")
         
         }
         else if sender.text == "unbellme" {

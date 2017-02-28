@@ -473,9 +473,9 @@ class menuController: UIViewController {
             
         if status == 11 {
             
-            bellappbutton.hidden = false
-            bellappimage.hidden = false
-            bellappview.hidden = false
+            //bellappbutton.hidden = false
+            //bellappimage.hidden = false
+            //bellappview.hidden = false
             
         }
         
